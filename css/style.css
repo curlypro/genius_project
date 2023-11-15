@@ -244,11 +244,12 @@ button{
 
 .chefs-list{
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 40px 30px;
 }
 
 .chefs-item{
-    flex-basis: calc(100% - 30px / 2);
+    flex-basis: calc(100%/ 2 - 30px);
 }
 
 .chef-card{
