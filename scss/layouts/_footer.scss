@@ -1,79 +1,91 @@
 .footer {
-    padding: 32px 0;
-    position: relative;
-    background-color: var(--color-primary-dark);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(/images/footer-background.png);
-}
+  padding: 32px 0;
+  position: relative;
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/images/footer-background.png);
 
-.footer::before,
-.footer::after {
+  &::before,
+  &::after {
     position: absolute;
     bottom: 0;
     content: '';
-}
+  }
 
-.footer::before {
-
+  &::before {
     width: 120px;
     height: 120px;
     left: 0;
     background-repeat: no-repeat;
     background-image: url(/images/decor-bread-small.png);
-}
+  }
 
-.footer::after {
+  &::after {
     width: 380px;
     height: 190px;
     right: 0;
     background-image: url(/images/decor-bread-large.png);
-}
+  }
 
-.footer-container {
+  &__container {
     display: flex;
     gap: 20px;
-}
+  }
 
-.footer-nav,
-.footer-address {
+  &__nav,
+  &__address {
     display: flex;
     flex-basis: 50%;
     gap: 20px;
-}
+  }
 
-.footer-logo,
-.footer-menu {
+  &__logo,
+  &__menu {
     flex-grow: 1;
-}
+  }
 
-.address-list,
-.address-info {
+  &__nav,
+  &__address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+  }
+
+  &__logo,
+  &__menu {
     flex-grow: 1;
-}
+  }
 
-.address-link {
+  &__address-list,
+  &__address-info {
+    flex-grow: 1;
+  }
+
+  &__address-link {
     color: var(--color-primary-light);
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
-}
+  }
 
-.address-link:hover {
+  &__address-link:hover {
     color: var(--color-brand-normal);
     font-size: 16px;
     font-weight: 300;
-}
+  }
 
-.adress-icon {
+  &__adress-icon {
     fill: var(--color-primary-light);
-}
+  }
 
-.adress-icon:hover {
+  &__adress-icon:hover {
     fill: var(--color-brand-normal);
-}
+  }
 
-.address-copyright {
+  &__address-copyright {
     font-size: 14px;
+    color: #a18268;
+  }
 }
