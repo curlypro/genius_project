@@ -31,14 +31,27 @@
 
   &__container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: 50%;
+      flex-direction: row;
+    }
   }
 
   &__nav,
   &__address {
     display: flex;
-    flex-basis: 50%;
+    flex-direction: column;
     gap: 20px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: 50%;
+      flex-direction: row;
+      text-align: left;
+    }
   }
 
   &__logo,
@@ -68,6 +81,16 @@
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
+
+    &--icon {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+
+      @media screen and (min-width: $bp-tablet) {
+        justify-content: start;
+      }
+    }
   }
 
   &__address-link:hover {
